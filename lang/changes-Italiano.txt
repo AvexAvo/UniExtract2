@@ -1,63 +1,27 @@
-; -----------------------------------------------------------------------------
-;
-; Universal Extractor - File di lingua
-; Scritto per Universal Extractor - Universal Extractor v.2.0.0 Beta3
-; Autore:	Frank Fat <mr.ffat@gmail.com>
-; Homepage:	https://plus.google.com/110904614918389107980
-; 
-;
-; Istruzioni Traduzione:
-;	Copiare questo file in un nuovo file dal nome del nuovo linguaggio
-;	Ad esempio: Un file di lingua per la lingua tedesca sarebbe chiamato German.ini.
-;       Sostituire le parole inglesi e frasi con i loro equivalenti nativi, cercando di 
-;       abbinare il più possibile il fraseggio inglese, maiuscole e minuscole per motivi di coerenza.
-;	Aggiornare l'Autore e le informazioni della Homepage nella parte superiore del vostro nuovo file di lingua.
-;	Basta eliminare la riga Homepage se non si dispone di uno.  
-;	Merito a voi stessi nel termine ABOUT_INFO_LABEL se si vuole.
-;	Salvare il file in formato Unicode (UTF-16/UCS2 little endian) e Zip per conservare la formattazione.
-;	Contattare gli sviluppatori per l'inclusione in Universal Extractor.
-;
-;	I seguenti simboli hanno significati speciali:
-;	& - quando viene utilizzato in una etichetta o un pulsante GUI, precede la lettera che verrà registrato come 
-;	"tasto di scelta rapida" per quella funzione	
-;	%name	  - Rappresenta una scorciatoia per "Universal Extractor"
-;	%n	 	  - Indica un carattere di nuova riga
-;	%t	  	  - Indica un carattere di tabulazione
-;	%1,%2,... - Indica una variabile stringa che UniExtract sostituirà quando vengono visualizzati
-;	Il contenuto di ogni %1,... variabile è codificata in UniExtract.
-;	L'ordine delle variabili numerate può essere commutato per soddisfare l'ordine delle parole della lingua
-;
-; -----------------------------------------------------------------------------
+Modifiche ai file di lingua:
 
-[UniExtract]
-; Etichette GUI e pulsanti
-OK_BUT = "&OK"
-CANCEL_BUT = "&Annulla"
+Nuove voci/modificate:
+-----------------------------------------------------------
+
 DELETE_BUT = "&Eliminare"
 BATCH_BUT = "&Lotto"
 SEND_BUT = "&Inviare"
 NEXT_BUT = "Successivo >"
 PREV_BUT = "< Indietro"
 FINISH_BUT = "Finire"
-MAIN_DEST_DIR_LABEL = "Cartella di &destinazione:"
 MAIN_FILE_LABEL = "&Archivio/dell'Installatore"
 MAIN_DIRECTORY_LOCK = "Blocco"
 MAIN_DIRECTORY_LOCK_TOOLTIP = "Disabilitare scelta automatica directory di destinazione,%nesempio. per aggiungere più file alla coda di lotti%nsenza dover selezionare la stessa destinazione per ciascuno di essi"
-MENU_FILE_LABEL = "&File"
 MENU_FILE_OPEN_LABEL = "&Aprire"
 MENU_FILE_KEEP_OPEN_LABEL = "&Mantenere %name Aperto"
 MENU_FILE_SHOW_LABEL = "Mostra coda Batch"
 MENU_FILE_CLEAR_LABEL = "Pulire coda Batch"
 MENU_FILE_LOG_LABEL = "Elimina file di log (%1)"
-MENU_FILE_QUIT_LABEL = "&Esci"
-MENU_EDIT_LABEL = "&Modifica"
 MENU_EDIT_KEEP_LABEL = "&Mantenere Directory di destinazione"
 MENU_EDIT_SILENT_MODE_LABEL = "Modalità silenziosa"
 MENU_EDIT_PASSWORD_LABEL = "Elenco Password"
 MENU_EDIT_CONTEXT_LABEL = "&Voci Menu Contestuale"
-MENU_EDIT_PREFS_LABEL = "&Preferenze"
-MENU_HELP_LABEL = "A&iuto"
-MENU_HELP_FEEDBACK_LABEL = "Dare Feedback"
+MENU_HELP_FEEDBACK_LABEL = "&Dare Feedback"
 MENU_HELP_PLUGINS_LABEL = "&Plugins"
 MENU_HELP_UPDATE_LABEL = "Controlla &Aggiornamenti"
 MENU_HELP_WEB_LABEL = "%1 &Sito Web"
@@ -66,16 +30,11 @@ MENU_HELP_FORUM_LABEL = "Forum Sviluppatore"
 MENU_HELP_STATS_LABEL = "Statistica"
 MENU_HELP_PROGDIR_LABEL = "Aprire directory programma"
 MENU_HELP_ABOUT_LABEL = "Circa"
-PREFS_TITLE_LABEL = "Preferenze"
-PREFS_UNIEXTRACT_OPTS_LABEL = "Opzioni di Universal Extractor"
-PREFS_HISTORY_LABEL = "Tieni traccia della &cronologia"
 PREFS_TIMEOUT_LABEL = "&Timeout per Analsi:"
 PREFS_SECONDS_LABEL = "Secondi"
 PREFS_UPDATEINTERVAL_LABEL = "Intervallo di aggiornamento"
 PREFS_DAYS_LABEL = "Giorni"
-PREFS_FORMAT_OPTS_LABEL = "Opzioni specifiche del formato"
-PREFS_LANG_LABEL = "&Lingua"
-PREFS_WARN_EXECUTE_LABEL = "A&vverti prima di eseguire un file"
+PREFS_FORMAT_OPTS_LABEL = "Opzioni Aggiuntive"
 PREFS_WARN_EXECUTE_TOOLTIP = "Alcuni metodi di estrazione sono basati sull'esecuzione file.%nCon questa opzione viene abilitato un messaggio di avviso, visualizzato prima di eseguire tali azioni potenzialmente pericolose."
 PREFS_CHECK_FREE_SPACE_LABEL = "Verifica spazio libero"
 PREFS_CHECK_FREE_SPACE_TOOLTIP = "Verificare la presenza di sufficiente spazio libero su disco prima di estrarre."
@@ -108,13 +67,13 @@ FEEDBACK_TYPE_OPTIONS = "Tipo di file non supportato|Riportare un errore|Traduzi
 FEEDBACK_SYSINFO_LABEL = "Informazioni di Sistema:"
 FEEDBACK_FILE_LABEL = "Esempio di file/Tipo di file:"
 FEEDBACK_FILE_TOOLTIP = "Informazioni sul tipo di file (se necessario), si prega di fornire un link per il download di un file appropriato, se possibile"
-FEEDBACK_OUTPUT_LABEL = "%name Output:"
+FEEDBACK_OUTPUT_LABEL = "%name output:"
 FEEDBACK_OUTPUT_TOOLTIP = "messaggi di errore potenziali o il contenuto del file di log in caso di estrazioni falliti"
 FEEDBACK_MESSAGE_LABEL = "Il tuo messaggio/ulteriori informazioni:"
 FEEDBACK_MESSAGE_TOOLTIP = "Se possibile, scrivere in Inglese o Tedesco"
 FEEDBACK_EMAIL_LABEL = "Il tuo indirizzo E-Mail:"
 FEEDBACK_EMAIL_TOOLTIP = "Inserisci il tuo indirizzo e-mail per ottenere una risposta secondo la vostra richiesta di assistenza."
-CONTEXT_ENTRIES_LABEL = "Voci Menu Contestuale"
+CONTEXT_ENTRIES_LABEL = "Voci del Menu Contestuale"
 CONTEXT_ENABLED_LABEL = "Abilitato"
 CONTEXT_ALL_USERS_LABEL = "Attivare per tutti gli Utenti"
 CONTEXT_ADMIN_REQUIRED = "Questa opzione richiede diritti di Amministratore"
@@ -124,10 +83,10 @@ CONTEXT_CASCADING_RADIO = "Cascata"
 CONTEXT_CASCADING_RADIO_TOOLTIP = "Questa funzionalità richiede Windows 7 o superiore"
 FIRSTSTART_TITLE = "Primo Avvio Assistant"
 FIRSTSTART_PAGES = "Benvenuto|Preferenze|Voci del menu contestuale|Supporto per i File Video|Sistema di plugin|Finito"
-FIRSTSTART_PAGE1 = "Grazie per aver scelto %name.%n%nPer garantire il corretto funzionamento delle preferenze devono essere impostati al primo avvio. Questo assistente vi accompagnerà per aiutarvi a fare questo e non verrà mostrato di nuovo. Tuttavia, tutte le funzioni sono accessibili tramite menu principale o rispettivamente, le opzioni saranno impostate automaticamente quando necessario.%n%nPer favore prendere un pò di tempo per configurare %name."
+FIRSTSTART_PAGE1 = "Grazie per aver scelto %name.%n%nPer garantire il corretto funzionamento delle preferenze devono essere impostati al primo avvio. Questo assistente vi accompagnerà per aiutarvi a fare questo e non verrà mostrato di nuovo. Tuttavia, tutte le funzioni sono accessibili tramite menu principale o, rispettivamente, le opzioni saranno impostate automaticamente quando necessario.%n%nPer favore prendere un po 'di tempo per configurare %name."
 FIRSTSTART_PAGE2 = "In primo luogo, si prega di impostare le opzioni generali per l'estrazione e il comportamento globale %name.%n%nTutte queste preferenze sono accessibili in qualsiasi momento tramite il menu principale."
 FIRSTSTART_PAGE3 = "%name si può integrare completamente nel menu contestuale, in modo che un file può essere estratto e informazioni generali sul tipo di file possono essere visualizzati con un semplice clic destro su qualsiasi file e senza aprire la finestra principale del programma. Si prega di scegliere quali voci di menu di contesto si vuole visualizzare.%n%nTutte queste preferenze sono accessibili in qualsiasi momento tramite il menu principale."
-FIRSTSTART_PAGE4 = "%name supporta l'estrazione di tracce audio e video di file video più comuni. Per mantenere di piccole dimensione il programma, i file necessari per questa funzione non sono inclusi per impostazione predefinita.%n%nDovrebbero essere scaricati ora?%n%nNota: Con un clic su Download si accetta la licenza FFMPEG. Dopo il downloading può essere trovato nella 'directory licenza'."
+FIRSTSTART_PAGE4 = "%name supporta l'estrazione di tracce audio e video di file video più comuni. Per mantenere la dimensione del programma piccole, i file necessari per questa funzione non sono inclusi per impostazione predefinita.%n%nDovrebbero essere scaricati ora?%n%nNota: Con un clic su Download si accetta la licenza FFMPEG. Dopo il downloading può essere trovato nella 'directory licenza'."
 FIRSTSTART_PAGE5 = "Al fine di supportare una vasta gamma di tipi di file, %name fornisce il supporto per estrattori supplementari, che non sono inclusi per impostazione predefinita. Per lo più a causa di problemi legali e per mantenere le dimensioni del file, è necessario scaricare questi plugin per conto vostro e metterli nella cartella '%1'.%n%nOgni volta che un estrazione dei file è possibile con un estrattore aggiuntivo mancante, verrà visualizzato un messaggio. Una panoramica dei plugin disponibili e installati è accessibile attraverso la voce 'Plugins' nel menu di aiuto."
 FIRSTSTART_PAGE6 = "La configurazione è stata correttamente terminata. A questo punto è possibile iniziare a utilizzare %name. Se si verificano errori, si prega di segnalare tramite il 'Feedback' voce di menu nel menu Guida. Grazie.%n%nDisconoscimento: Questo software viene fornito "così com'è", senza alcuna garanzia; usarlo a proprio rischio. Gli autori di %name non possono essere fatti responsabili per eventuali danni derivanti dall'uso del Software. Come qualsiasi strumento, può essere utilizzato per legittimi nonché scopi illegittimi. Con l'utilizzo di %name l'utente accetta di usarlo solo per scopi legali, secondo la legge locale e internazionale. Se non si accetta questo accordo di licenza, non si è autorizzati a utilizzare questo strumento."
 ABOUT_INFO_LABEL = "da %1%nVersione 2.0.0 da Bioruebe <%2>%n%n%3%n%nfile di lingua Inglese da Jared Breland/Bioruebe%n%nRilasciata sotto %4"
@@ -135,63 +94,28 @@ ABOUT_VERSION = "Versione %1"
 METHOD_ADMIN_RADIO = "%1 Installazione Administrativa"
 METHOD_EXTRACTION_RADIO = "%1 Estrazione"
 METHOD_HEADER = "%1 Estrazione"
-METHOD_RADIO_LABEL = "Metodo estrazione"
 METHOD_SWITCH_RADIO = "%1 Interruttore"
-METHOD_NOTIS_RADIO = "Non è un installer InstallShield"
 METHOD_TEXT_LABEL = "%name supporta i seguenti metodi per l'estrazione %1 Pacchetti. Purtroppo, nessuno di questi metodi è affidabile al 100%. Se il metodo di default non sembra funzionare, si prega di eseguire di nuovo %name e selezionare un metodo alternativo."
 METHOD_UNPACKER_RADIO = "%1 Decompressori"
 METHOD_GAME_LABEL = "Il file %1 è probabilmente un archivio di gioco. %name in grado di gestire diversi tipi di pacchetti di giochi, ma non è possibile verificare il gioco a cui appartiene. Si prega di selezionare il gioco corretto dalla lista qui sotto e fare clic su OK per avviare l'estrazione o scegliere 'Non è un gioco di questo elenco' provare a estrarre il pacchetto con un altro metodo. Clicca annullare se il file non è un archivio gioco.%n%nNota: Se un archivio gioco viene estratto con la firma sbagliata, può condurre al sistema che si blocca fino a diversi minuti. Stai attento."
 METHOD_GAME_NOGAME = "Non è un gioco di questo elenco"
-
-; Funzioni di controllo GUI
-DOES_NOT_EXIST = "non esiste.%n"
-EXTRACT_TO = "Estrarre in:"
-INVALID_FILE_SELECTED = "%1Selezionare un file valido."
-OPEN_FILE = "Apri file"
-SELECT_FILE = "Seleziona file"
-UPDATE_CURRENT = "Si sta già utilizzando la versione più recente %name."
-
-; Termini Comuni
-TERM_ARCHIVE = "archivio"
+INVALID_FILE_SELECTED = "%1Si prega di selezionare un file valido."
+UPDATE_CURRENT = "Si sta già utilizzando la versione più recente di %name."
 TERM_AUDIO = "Audio"
-TERM_COMPRESSED = "File compresso"
 TERM_CONTAINER = "Formato contenitore"
-TERM_DISK = "Disco"
 TERM_DOWNLOAD = "Scaricare"
 TERM_DOWNLOADING = "Scaricamento"
-TERM_EBOOK = "eBook"
-TERM_ECARD = "eCard"
-TERM_ENCODED = "File codificato"
-TERM_EXTRACT = "Estrai"
+TERM_EXTRACT = "Estratto"
 TERM_FILE = "File"
 TERM_GAME = "Gioco"
-TERM_HELP = "File della guida"
-TERM_HOTFIX = "hotfix"
-TERM_IMAGE = "Immagine"
 TERM_INSTALLED = "Installato"
-TERM_INSTALLER = "Installazione"
-TERM_MERGE_MODULE = ""
-TERM_PACKAGE = "Package"
-TERM_PATCH = "Patch"
 TERM_SCAN = "Scansione"
-TERM_SFX = "Autoestraente"
-TERM_STAGE = "Livello"
-TERM_TESTING = "Prove"
-TERM_UNKNOWN = "Sconosciuto"
-TERM_UNPACKED = "Disimballato"
-TERM_UPDATER = "Aggiornamento"
 TERM_VIDEO = "Video"
-
-; Messaggi di Stato
-SCANNING_FILE = "Scansione file con"
-SCANNING_EXE = "Scansione di file eseguibile con %1."
-EXTRACTING = "Estrazione file da:"
-INIT_WAIT = "In attesa dell'inizializzazione dell'installer.%nAttendere, prego."
+SCANNING_FILE = "Scansione file con %1"
+SCANNING_EXE = "Scansione di file eseguibile con %1"
 SENDING_FEEDBACK = "Invio feedback"
 INPUT_NEEDED = "Input utente necessaria"
 SEARCHING_PASSWORD = "Ricerca password"
-
-; Istruzioni Personalizzate
 CONVERT_CDROM = "%1 Le immagini non possono essere estratte direttamente. Invece, questa immagine viene convertita in un'immagine ISO, che verrà poi estratta.%n%nVuoi continuare?%nNota: Questo processo richiederà diversi minuti."
 CONVERT_CDROM_STAGE1_FAILED = "Errore:  L'immagine non può essere convertita.%nSe questo è un BIN/CUE Immagine, assicurare che il CUE file viene formattato correttamente."
 CONVERT_CDROM_STAGE2_FAILED = "Errore:  Un'immagine ISO è stata creata, ma non può essere convertita.%nVolete mantenere l'immagine ISO per ulteriori analisi?"
@@ -216,32 +140,23 @@ NO_FREE_SPACE = "Avvertimento:%nL'unità di uscita ha meno spazio di quelle del f
 CONTEXT_DANGEROUS = "Avvertimento:%nCambiare associazioni di file può essere pericoloso. Per esempio. Cambiando exe comandi standard può comportare applicazioni non poter funzionare affatto. Si prega di assicurarsi di sapere cosa si sta facendo.%n%nSei sicuro di voler continuare?"
 ELEVATION_REQUIRED = "Accesso negato.%n%n%name Sarà riavviato con diritti elevati. Riprova in seguito."
 ACCESS_DENIED = "Accesso negato.%n%n%name È già eseguito con diritti elevati. Si prega di assicurarsi di avere i diritti necessari per eseguire l'azione e riprovare."
-
-; Testo Guida
-HELP_SUMMARY = "Estrae file da qualsiasi tipo di archivio o pacchetto di installazione."
 HELP_SYNTAX = "%nUso: %n%n%1 [/Aiuto | /Preferenze | /Rimuovere | /Pulire | /Aggiornare] [ Nome del file [/Scansione | Destinazione] [/Silenzioso][/Lotto]]"
-HELP_ARGUMENTS = "%n%nOpzioni supportate:"
 HELP_HELP = "%n     %1%t%tVisualizzare queste informazioni di aiuto"
 HELP_PREFS = "%n     %1%t%tRegolare le preferenze UniExtract"
 HELP_REMOVE = "%n     %1%tElimina tutte le voci del menu contestuale di file e%n%t%tassociazioni"
 HELP_CLEAR = "%n     %1%tPulire coda di lotto e disabilita modalità lotto"
 HELP_UPDATE = "%n     %1%tControlla gli aggiornamenti"
 HELP_SCAN = "%n     %1%t%tFornisce informazioni relative al tipo di file"
-HELP_FILENAME = "%n     nomefile%tNome del file da estrarre"
-HELP_DESTINATION = "%n     destinazione%tCartella in cui estrarre"
 HELP_SILENT = "%n     %1%t%tModalità silenziosa (non richieste)"
 HELP_BATCH = "%n     %1%t%tAggiungere il file alla coda lotto"
 HELP_SUB = "%n%nPassaggio %1 invece di un nome di directory di destinazione indica%n%name di estrarre in una sottodirectory dal nome dell'archivio."
-HELP_EXAMPLE1 = "%n%nEsempio:"
 HELP_EXAMPLE2 = "%n     %1 c:\1\esempio.zip c:\prova"
 HELP_NOARGS = "%n%nL'esecuzione %name senza argomenti richiederà all'utente per la directory nome del file e la destinazione."
-
-; Messaggio di errore
 CANNOT_EXTRACT = "%1 Non può essere estratto.%nNon è stato possibile determinare esattamente il tipo di file. Tipo di file restituito: %n%n%2%n%nDesideri analizzare il file te stesso?"
 UNKNOWN_EXT = "%1 Ha un'estensione sconosciuta e non può essere estratta.%n%nSe si dispone di ulteriori informazioni su questo tipo di file, non esitate a contattarci. Maggiori dettagli possono essere trovati nel menu Aito.%n%n%2"
 INVALID_FILE = "Il file da estrarre,%n%n%1%,n%nnon è stato trovato. Si prega di selezionare un ingresso valido.%n%n%1"
-INVALID_DIR = "%1%nnon può essere creato.  Inserire una destinazione valida."
-EXTRACT_FAILED = "%name non può essere estratto.%nSembra essere un %1, che è supportato, ma l'estrazione è fallita.%nPer maggiori informazioni, verificare il file di log: "%2".%n%nClicca su OK per visualizzare il file ora, oppure su Annulla per terminare."
+INVALID_DIR = "%1 Non può essere creato. Non si dispone delle autorizzazioni necessarie per scrivere nella cartella.%n%nSi prega di selezionare una destinazione valida o provare a eseguire %name con diritti di amministratore."
+EXTRACT_FAILED = "%1 Non può essere estratto.%nSembra essere un (n) %2, che è supportato, ma l'estrazione è fallita.%n%nDesideri %name creare e visualizzare un file di log con ulteriori informazioni?"
 NOT_PACKED = "%1 Non può essere estratto, il file non viene imballato %n%n%2"
 DOWNLOAD_FAILED = "Il file %1 non può essere scaricato. Per favore assicurarsi di di essere connessi a Internet e riprovare."
 UPDATECHECK_FAILED = "Verifica aggiornamenti non riuscito. Per favore assicurarsi di di essere connessi a Internet e riprovare."
@@ -256,8 +171,6 @@ EXTRACT_TIMEOUT = "%1 Non può essere estratto.%n%nIl timeout è stato raggiunto. 
 WRONG_PASSWORD = "%1 Non può essere estratto.%n%nIl file è protetto da password e la password inserita non è corretta.%n%nSuggerimento: Usate la ricerca automatica delle password integrato sulla base di una lista di password configurabile, che si trova nel %2 menu."
 PLUGIN_IMPORT_MISSINGFILES = "Importazione di plug-in %1 fallito.%n%nNon sono stati selezionati tutti i file. Si prega di riprovare e selezionare tutti i seguenti file:%n%n%2"
 MISSING_DEFINITION = "%1 Non può essere estratto.%n%nIl file di definizione %2 non è stato trovato.%n%nSe si tratta di un plugin personalizzato, assicurarsi di averlo impostato correttamente."
-
-; Descrizioni Plugin
 PLUGIN_SUPPORTED_FILETYPES = "Tipi di file supportati:"
 PLUGIN_ARC_CONV = "Estrattore per diversi archivi di gioco"
 PLUGIN_ISCAB = "Parte del pacchetto InstallShield per estrarre file CAB. Potrebbe funzionare meglio un'estrattore generico commerciale di Universal Extractor, ma non è uno strumento (gratuito)."
@@ -270,29 +183,83 @@ PLUGIN_MPQ = "Plugin per .mpq archivi utilizzato in molti giochi di Blizzard"
 PLUGIN_CI = "Plugin per gli installatori CreateInstall, scaricare, installare, copiare i file %1, %2, %3 a \bin"
 PLUGIN_DGCA = "Decompressore per gli archivi DGCA"
 PLUGIN_BOOTIMG = "Estrattore per immagini di boot Android"
-PLUGIN_IS5COMP = "Il supporto di estrazione per meno recenti archivi cabinet InstallShield"
-
-; Integrazione Menu Contestuale
+PLUGIN_IS5COMP = "il supporto di estrazione per meno recenti archivi cabinet InstallShield"
 EXTRACT_FILES = "UniExtract &Apri"
-EXTRACT_HERE = "UniExtract &Estrai qui"
-EXTRACT_SUB = "UniExtract &Estrai nella sottocartella"
 SCAN_FILE = "Scansione File"
-
-; Altro
 DIR_ADDITIONAL_FILES = "File aggiuntivi"
-
-[Installatore]
-; Pagina Componenti
 COMP_FULL = "Installazione completa"
 COMP_COMPACT = "Installazione compatta"
 COMP_CUSTOM = "Installazione personalizzata"
 COMP_MAIN = "Universal Extractor file principali"
-COMP_DOCS = "Informazioni sulla documentazione e le licenze"
-COMP_LANG = "File di lingua per il supporto della localizzazione"
 COMP_SOURCE = "Il codice sorgente di Universal Extractor"
 
-; Pagina Attività
-MODIFY_PATH = "Aggiungi Universal Extractor al tuo &Path di sistema"
-DESKTOP_ICON = "Crea un'icona sul &Desktop"
-QUICK_LAUNCH_ICON = "Crea un'icona in Avvio &veloce"
-SENDTO_ICON = "Crea un'icona in &Invia a"
+
+Voci eliminate:
+-----------------------------------------------------------
+
+MAIN_FILE_LABEL = "&Archivio/Installatore per estrarre:"
+MENU_HELP_WEB_LABEL = "%s &Sito Web"
+PREFS_FORMAT_OPTS_LABEL = "Opzioni di Formato-Specifiche"
+PREFS_DEBUG_LABEL = "&Directory dei file di Debug:"
+PREFS_REMOVE_DUPE_LABEL = "&Rimuovere i file duplicati"
+PREFS_REMOVE_TEMP_LABEL = "Rimuovere &file temporanei"
+PREFS_APPEND_EXT_LABEL = "&Aggiunge mancante estensioni di file"
+METHOD_ADMIN_RADIO = "%s Administrative Installer"
+METHOD_EXTRACTION_RADIO = "%s estrazione"
+METHOD_HEADER = "%s Estrazione"
+METHOD_MSI_NOTE_LABEL = "Nota:"
+METHOD_MSI_REQUIRES_LABEL = "msi2xml richiede la"
+METHOD_MSI_URL_LABEL = "MSXML 6.0 Parser"
+METHOD_SWITCH_RADIO = "%s switch"
+METHOD_TEXT_LABEL = "%s supporta i seguenti metodi per l'estrazione %s Pacchetti.  Purtroppo, nessuno di questi metodi sono affidabili al 100%.  Se il metodo di default non sembra funzionare, si prega di eseguire nuovamente %s e selezionare un metodo alternativo."
+METHOD_UNPACKER_RADIO = "%s Disimballare"
+INVALID_DIR_SELECTED =  "%s Non è una directory valida."
+INVALID_FILE_SELECTED = "%sSi prega di selezionare un file valido."
+WRITE_TO = "Scrivere a"
+TERM_EXECUTABLE = "Eseguibile"
+TERM_FAILED = "Fallito"
+TERM_SUCCEEDED = "Riuscito"
+SCANNING_FILE = "file di scansione per determinare tipo di file."
+SCANNING_EXE = "Scansione file con %s scan."
+CONVERT_CDROM = "%s Immagini CD-ROM non possono essere estratte direttamente.  Invece, questa immagine%nviene convertita in un'immagine CD-ROM ISO, che sarà poi estratta.%n%nVuoi continuare?%nNota: Questo processo richiederà diversi minuti."
+CONVERT_CDROM_STAGE1_FAILED = "Errore:  L'immagine del CD-ROM non può essere convertito.%nSe questa immagine, è un BIN/CUE assicurarsi che il file CUE è correttamente formattato."
+CONVERT_CDROM_STAGE2_FAILED = "Errore:  Un'immagine ISO è stata creata dall' %s immagine, ma non può essere convertito.%nVolete mantenere l'immagine ISO per ulteriori analisi?"
+CONVERT_BIN_MISSING = "Errore: Non ho potuto trovare:%n%s\%s.%s%n%nEntrambi %s.bin e %s.cue sono necessari."
+INIT_COMPLETE = "Inizializzazione %s.  Si prega di uscire dal programma di installazione, quindi fare clic su OK per continuare."
+WISE_MSI_PROMPT = "Nota:  Questo metodo funziona solo con specifica Wise per pacchetti di Windows Installer.%nSe l'installazione guidata Wise inizia e semplicemente aspetta per l'input, questo file non è%nsupportato.  Si prega di uscire dal programma di installazione, e %s si interromperà l'estrazione.%n%nVuoi continuare?"
+UNPACK_PROMPT = "Questo file è compresso con la %s compressione, ma non può essere estratto.%nQuesto può essere perché il tipo di file non è supportato, o perché%nsemplicemente non ci sono file inclusi per estrarre.%n%nVolete decomprimere il file, invece?%n%nNota: Il file scompattato si chiamerà:%n%s\%s_spacchettato.%s"
+UNPACK_FAILED = "Errore:  %s%nNon poteva essere spacchettato."
+WARN_EXECUTE = "Avvertimento:  Per estrarre i file di questo tipo, il file deve essere eseguito direttamente.%nSe si continua, il comando verrà eseguito:%n%n%s%n%nSe credi che questo file potrebbe eventualmente essere dannoso, si raccomanda di non continuare.%nVuoi continuare con l'estrazione?"
+HELP_SYNTAX = "%nUso:  %s [/Aiuto | /Preferenze] [Nome del file [Destinazione]]"
+HELP_HELP = "%n     /Aiuto%t%tVisualizzare queste informazioni di aiuto"
+HELP_PREFS = "%n     /Preferenze%t%tRegolare le preferenze UniExtract"
+HELP_SUB = "%n%nPassaggio /sub invece di un nome di directory di destinazione istruisce%n%s per estrarre a sottodirectory denominata dopo l'archivio."
+HELP_EXAMPLE2 = "%n     %s c:\1\esempio.zip c:\prova"
+HELP_NOARGS = "%n%nIn esecuzione %s senza argomenti farà%nrichiedere all'utente per la directory nome del file e la destinazione."
+CANNOT_LOG = "%s estrazioni non possono essere registrati."
+CANNOT_DEBUG = "La directory di output del file di debug, "%s", non è scrivibile.%nLa vostra directory temp verrà utilizzata al posto suo."
+CANNOT_EXTRACT = "%s Non può essere estratto.%nTipo di file restituito: %s%n%nFare clic su OK se si desidera analizzare il file da soli, o Annulla per uscire."
+UNKNOWN_EXT = "%s%nHa un'estensione sconosciuta e non può essere estratto."
+INVALID_DIR = "%s%nNon può essere creato.  Si prega di selezionare una destinazione valida."
+EXTRACT_FAILED = "%s Non può essere estratto.%nSembra essere un (n) %s, che è supportato, ma l'estrazione è fallita.%nSi prega di consultare il file di log, %s, per maggiori informazioni.%n%nFare clic su OK per visualizzare il file di log ora, o Annulla per uscire."
+COMP_ACE = "Supporto per i file ACE"
+COMP_KGB = "Supporto per i file KGB"
+COMP_PEA = "Supporto per i file Pea"
+COMP_SIT = "Supporto per i file StuffIt"
+PREFS_CAPTION = "Opzioni Programma Impostato"
+PREFS_DESCRIPTION = "Quali opzioni di Universal Extractor vorresti impostare?"
+PREFS_LABEL1 = "È possibile impostare le seguenti opzioni per regolare il comportamento predefinito di Universal Extractor."
+PREFS_LABEL2 = "Queste opzioni possono essere modificate dopo l'installazione, modificando UniExtract.ini."
+LANGUAGE_LABEL = "Lingua Predefinita"
+DEBUG_LABEL = "Posizione File Debug"
+APPEND_EXT_LABEL = "&Aggiunge mancante estensioni di file"
+HISTORY_LABEL = "&Mantenere la storia dell'archivio"
+REMOVE_DUPE_LABEL = "Rimuovere &file duplicati"
+REMOVE_TEMP_LABEL = "Rimuovere &file temporanei"
+WARN_EXECUTE_LABEL = "&Avvisa prima di eseguire file"
+ASSOCIATE = "&Abilita Explorer integrazione del menu contestuale"
+ASSOCIATE_FILES = "Aggiungere UniExtract &Files... al menu contestuale"
+ASSOCIATE_HERE = "Aggiungere UniExtract &Qui al menu contestuale"
+ASSOCIATE_SUBDIR = "Aggiungere UniExtract &Subdir al menu contestuale"
+ASSOCIATE_FORCE = "Forza &associazione con tutti i formati di archivio supportati"
+EXTRACT_FILES = "UniExtract &Files..."
